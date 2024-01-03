@@ -3,9 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "keywords": [],
+  "main": "7.js",
   "author": "",
   "license": "ISC",
   "dependencies": {
     "typescript": "^5.1.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "web-dev-server --node-resolve --open --watch"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.4.1"
   }
 }
