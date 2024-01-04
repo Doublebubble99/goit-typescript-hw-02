@@ -3,12 +3,10 @@
 */
 interface ComponentInterface {
   title: string;
-}
-class Component<T extends ComponentInterface> {
-  constructor(public props: T) {}
-}
-interface ComponentInterface {
   pageInfo: () => void;
+}
+class Component<T> {
+  constructor(public props: T) {}
 }
 class Page extends Component<ComponentInterface> {
   pageInfo() {
